@@ -1,4 +1,26 @@
 Rails.application.routes.draw do
+  resources :facility_reviews
+
+  resources :provider_reviews
+
+  resources :specialties
+
+  resources :medications
+
+  resources :procedures
+
+  resources :facilities
+
+  resources :providers
+
+  get 'pages/main'
+
+  get 'pages/home'
+
+  get 'pages/about'
+
+  get 'pages/contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
