@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reviewer:</strong>
+  <%= @facility_review.reviewer %>
+</p>
+
+<p>
+  <strong>Facility:</strong>
+  <%= @facility_review.facility %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @facility_review.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @facility_review.description %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @facility_review.rating %>
+</p>
+
+<%= link_to 'Edit', edit_facility_review_path(@facility_review) %> |
+<%= link_to 'Back', facility_reviews_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reviewer:</strong>
+  <%= @provider_review.reviewer %>
+</p>
+
+<p>
+  <strong>Provider:</strong>
+  <%= @provider_review.provider %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @provider_review.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @provider_review.description %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @provider_review.rating %>
+</p>
+
+<%= link_to 'Edit', edit_provider_review_path(@provider_review) %> |
+<%= link_to 'Back', provider_reviews_path %>
