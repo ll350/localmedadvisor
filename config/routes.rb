@@ -10,9 +10,14 @@ Rails.application.routes.draw do
 
   resources :procedures
 
-  resources :facilities
+  resources :facilities do
+    resources :facility_reviews
+  end
 
-  resources :providers
+  resources :providers do
+    resources :provider_reviews
+  end
+  
 
   get 'pages/main'
 

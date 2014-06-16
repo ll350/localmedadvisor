@@ -1,29 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @facility.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @facility.description %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @facility.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @facility.state %>
-</p>
-
-<p>
-  <strong>Zip:</strong>
-  <%= @facility.zip %>
-</p>
-
-<%= link_to 'Edit', edit_facility_path(@facility) %> |
-<%= link_to 'Back', facilities_path %>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" alt="...">
+      <div class="caption">
+        <h3><%= @facility.name %></h3>
+        <p><%= @facility.description %></p>
+		<%= @facility.city %>, <%= @facility.state %> <%= @facility.zip %>
+		<div>
+		  <%= link_to 'Review', new_facility_facility_review_path(@facility), class: "btn btn-primary" %>
+		  <button type="button" class="btn btn-info">TODO</button> 
+		  <%= link_to 'Back', facilities_path, class: "btn btn-default" %>
+		</div>
+      </div>
+	  
+    </div>
+  </div>
+</div>

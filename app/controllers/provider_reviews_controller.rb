@@ -15,6 +15,7 @@ class ProviderReviewsController < ApplicationController
   # GET /provider_reviews/new
   def new
     @provider_review = ProviderReview.new
+    @provider = Provider.find(params[:provider_id])
   end
 
   # GET /provider_reviews/1/edit
@@ -24,11 +25,13 @@ class ProviderReviewsController < ApplicationController
   # POST /provider_reviews
   # POST /provider_reviews.json
   def create
-    @provider_review = ProviderReview.new(provider_review_params)
+    #@provider_review = ProviderReview.new(provider_review_params)
+    @provider = Provider.find(params[:provider_id])
+    @provider_review = @provider.provider_reviews.create(provider_review_params)
 
     respond_to do |format|
       if @provider_review.save
-        format.html { redirect_to @provider_review, notice: 'Provider review was successfully created.' }
+        format.html { redirect_to @provider, notice: 'Provider review was successfully created.' }
         format.json { render :show, status: :created, location: @provider_review }
       else
         format.html { render :new }
@@ -69,6 +72,6 @@ class ProviderReviewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def provider_review_params
-      params.require(:provider_review).permit(:reviewer, :provider, :title, :description, :rating)
+      params.require(:provider_review).permit(:reviewer, :provider, :title, :description, :rating, :provider_id)
     end
 end
