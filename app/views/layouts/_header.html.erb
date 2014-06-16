@@ -68,18 +68,29 @@
 		
 -->
       <ul class="nav navbar-nav navbar-right">
-
+		 
         <li class="dropdown">
+			<% if user_signed_in? %>
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+	            <li><%= link_to "Change Password", edit_user_registration_path %></li>
+	            <li><%= link_to "My Profile(TODO)", cancel_user_registration_path %></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Contact Us</a></li>
+	          </ul>
+	        </li>
+			<% else %>
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Forgot Password</a></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Forgot Password", new_user_password_path %></li>
             <li class="divider"></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </li>
-		
+		<% end %>
 		<li><a href="#">Location</a></li>
 				
       </ul>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140615203322) do
+ActiveRecord::Schema.define(version: 20140616011736) do
 
   create_table "facilities", force: true do |t|
     t.string   "name"
@@ -31,7 +31,12 @@ ActiveRecord::Schema.define(version: 20140615203322) do
     t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "facility_id"
+    t.integer  "user_id"
   end
+
+  add_index "facility_reviews", ["facility_id"], name: "index_facility_reviews_on_facility_id"
+  add_index "facility_reviews", ["user_id"], name: "index_facility_reviews_on_user_id"
 
   create_table "medications", force: true do |t|
     t.string   "name"
@@ -55,7 +60,12 @@ ActiveRecord::Schema.define(version: 20140615203322) do
     t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "provider_id"
+    t.integer  "user_id"
   end
+
+  add_index "provider_reviews", ["provider_id"], name: "index_provider_reviews_on_provider_id"
+  add_index "provider_reviews", ["user_id"], name: "index_provider_reviews_on_user_id"
 
   create_table "providers", force: true do |t|
     t.string   "name"
