@@ -1,5 +1,22 @@
 Rails.application.routes.draw do
+  get 'm_search/index'
+
+  get 'm_search/search'
+
   devise_for :users
+  
+  resources :users do
+    resources :providers
+  end
+  
+  resources :users do
+    resources :facilities
+  end
+  
+  resources :users do
+    resources :procdures
+  end
+    
   resources :facility_reviews
 
   resources :provider_reviews

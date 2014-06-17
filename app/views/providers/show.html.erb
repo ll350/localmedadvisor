@@ -10,7 +10,9 @@
 		<%= @provider.city %>, <%= @provider.state %> <%= @provider.zip %>
 		<div>
 		  <%= link_to 'Review', new_provider_provider_review_path(@provider), class: "btn btn-primary" %> 
+		 
 		  <button type="button" class="btn btn-info">TODO</button>
+	
 		  <%= link_to 'Back', providers_path, class: "btn btn-default" %>
 		</div>
       </div>
@@ -22,7 +24,6 @@
 	    <thead>
 	      <tr>
 	        <th>Reviewer</th>
-	        <th>Provider</th>
 	        <th>Title</th>
 	        <th>Description</th>
 	        <th>Rating</th>
@@ -34,13 +35,10 @@
 	      <% @provider.provider_reviews.each do |provider_review| %>
 	        <tr>
 	          <td><%= provider_review.reviewer %></td>
-	          <td><%= provider_review.provider %></td>
 	          <td><%= provider_review.title %></td>
 	          <td><%= provider_review.description %></td>
 	          <td><%= provider_review.rating %></td>
-	          <td><%= link_to 'Show', provider_review %></td>
-	          <td><%= link_to 'Edit', edit_provider_review_path(provider_review) %></td>
-	          <td><%= link_to 'Destroy', provider_review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
 	        </tr>
 	      <% end %>
 	    </tbody>

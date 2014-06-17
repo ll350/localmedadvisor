@@ -23,11 +23,18 @@ class ProvidersController < ApplicationController
 
   # GET /providers/1/edit
   def edit
+    # TODO Fix this horrible hack
+    if params[:user_id]
+      @user = User.find(params[:user_id])
+      @user.providers.add(@provider.id)
+      redirect_to provider_path(@provider)
+    end
   end
 
   # POST /providers
   # POST /providers.json
   def create
+   
     @provider = Provider.new(provider_params)
 
     respond_to do |format|
