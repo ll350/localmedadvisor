@@ -1,0 +1,152 @@
+<h1>MSearch#search</h1>
+
+<%= render 'layouts/msearchinnernav'%>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="#all" data-toggle="tab">All <span class="badge"><%= @providers.count + @facilities.count + @procedures.count %></span></a></li>
+  <li><a href="#providers" data-toggle="tab">Providers <span class="badge"><%= @providers.count %></span></a></li>
+  <li><a href="#facilities" data-toggle="tab">Facilities <span class="badge"><%= @facilities.count %></span></a></li>
+  <li><a href="#procedures" data-toggle="tab">Procedures <span class="badge"><%= @procedures.count %></span></a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="all">
+	  All the things
+	  <table class="table">
+	    <thead>
+	      <tr>
+	        <th>Name</th>
+ 		    <th>Type</th>
+	        <th colspan="3"></th>
+	      </tr>
+	    </thead>
+
+	    <tbody>
+	      <% @providers.each do |provider| %>
+	        <tr>
+	          <td><%= provider.name %></td>
+			  <td>Provider</td>
+	          <td><%= link_to 'Show', provider %></td>
+
+	        </tr>
+	      <% end %>
+	        <% @facilities.each do |facility| %>
+	          <tr>
+	            <td><%= facility.name %></td>
+				<td>Facility</td>
+	            <td><%= link_to 'Show', facility %></td>
+
+	          </tr>
+  	      <% end %>
+		      <% @procedures.each do |procedure| %>
+		        <tr>
+		          <td><%= procedure.name %></td>
+		          <td>Prcedure</td>
+ 
+		          <td><%= link_to 'Show', procedure %></td>
+
+		        </tr>
+	      <% end %>
+	    </tbody>
+	  </table>
+	  
+  </div>
+  <div class="tab-pane" id="providers">
+	  All the Providers
+	  <table class="table">
+	    <thead>
+	      <tr>
+	        <th>Name</th>
+	        <th>Specialty</th>
+	        <th>City</th>
+	        <th>State</th>
+	        <th>Zip</th>
+	        <th colspan="3"></th>
+	      </tr>
+	    </thead>
+
+	    <tbody>
+	      <% @providers.each do |provider| %>
+	        <tr>
+	          <td><%= provider.name %></td>
+	          <td><%= provider.specialty %></td>
+	          <td><%= provider.city %></td>
+	          <td><%= provider.state %></td>
+	          <td><%= provider.zip %></td>
+	          <td><%= link_to 'Show', provider %></td>
+
+	        </tr>
+  	      <% end %>
+
+	    </tbody>
+	  </table>
+
+  </div>
+  <div class="tab-pane" id="facilities">
+	  All the Facilities
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @facilities.each do |facility| %>
+        <tr>
+          <td><%= facility.name %></td>
+          <td><%= facility.description %></td>
+          <td><%= facility.city %></td>
+          <td><%= facility.state %></td>
+          <td><%= facility.zip %></td>
+          <td><%= link_to 'Show', facility %></td>
+  		<!-- 
+          <td><%= link_to 'Edit', edit_facility_path(facility) %></td>
+          <td><%= link_to 'Destroy', facility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  		-->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  </div>
+  <div class="tab-pane" id="procedures">
+	  
+	  All the Procedures
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @procedures.each do |procedure| %>
+        <tr>
+          <td><%= procedure.name %></td>
+          <td><%= procedure.description %></td>
+ 
+          <td><%= link_to 'Show', procedure %></td>
+  		<!-- 
+          <td><%= link_to 'Edit', edit_procedure_path(procedure) %></td>
+          <td><%= link_to 'Destroy', procedure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  		-->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  
+  </div>
+</div>
+<p>Find me in app/views/m_search/search.html.erb</p>
