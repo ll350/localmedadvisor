@@ -1,0 +1,88 @@
+idSelectedProcedures,HCPCSCode,HCPCSName,ProcedureGroup,Specialties
+1,66982,"Cataract surgery complex","Cataract Surgery","Ophthalmology"
+2,66984,"Cataract surg w/iol 1 stage","Cataract Surgery","Ophthalmology"
+3,45378,"Diagnostic colonoscopy",Colonoscopy,"Gastroenterology"
+4,45380,"Colonoscopy and biopsy",Colonoscopy,"Gastroenterology"
+5,45383,"Lesion removal colonoscopy",Colonoscopy,"Gastroenterology"
+6,45384,"Lesion remove colonoscopy",Colonoscopy,"Gastroenterology"
+7,45385,"Lesion removal colonoscopy",Colonoscopy,"Gastroenterology"
+8,85025,"Complete cbc w/auto diff wbc","Complete CBC","Primary Care"
+9,85027,"Complete cbc automated","Complete CBC","Primary Care"
+10,76705,"Echo exam of abdomen",Echo,"Cardiology"
+11,76932,"Echo guide for heart biopsy",Echo,"Cardiology"
+12,93303,"Echo transthoracic",Echo,"Cardiology"
+13,93306,"Tte w/doppler complete",Echo,"Cardiology"
+14,93307,"Tte w/o doppler complete",Echo,"Cardiology"
+15,93312,"Echo transesophageal",Echo,"Cardiology"
+16,93314,"Echo transesophageal",Echo,"Cardiology"
+17,93320,"Doppler echo exam heart",Echo,"Cardiology"
+18,93321,"Doppler echo exam heart",Echo,"Cardiology"
+19,93000,"Electrocardiogram complete",EKG,"Cardiology; Primary Care"
+20,93010,"Electrocardiogram report",EKG,"Cardiology; Primary Care"
+21,92002,"Eye exam new patient","Eye Exam","Ophthalmology"
+22,92004,"Eye exam new patient","Eye Exam","Ophthalmology"
+23,92012,"Eye exam established pat","Eye Exam","Ophthalmology"
+24,92014,"Eye exam & treatment","Eye Exam","Ophthalmology"
+25,92235,"Eye exam with photos","Eye Exam","Ophthalmology"
+26,92250,"Eye exam with photos","Eye Exam","Ophthalmology"
+27,82962,"Glucose blood test","Glucose Blood Test","Primary Care"
+28,80061,"Lipid panel","Lipid Panel","Primary Care"
+29,80047,"Metabolic panel ionized ca","Metabolic Panel","Primary Care"
+30,80048,"Metabolic panel total ca","Metabolic Panel","Primary Care"
+31,80053,"Comprehen metabolic panel","Metabolic Panel","Primary Care"
+32,17311,"Mohs 1 stage h/n/hf/g",MOHS,"Dermatology"
+33,17312,"Mohs addl stage",MOHS,"Dermatology"
+34,17313,"Mohs 1 stage t/a/l",MOHS,"Dermatology"
+35,17314,"Mohs addl stage t/a/l",MOHS,"Dermatology"
+36,17315,"Mohs surg addl block",MOHS,"Dermatology"
+37,99201,"Office/outpatient visit new","Office Visit","All"
+38,99202,"Office/outpatient visit new","Office Visit","All"
+39,99203,"Office/outpatient visit new","Office Visit","All"
+40,99204,"Office/outpatient visit new","Office Visit","All"
+41,99205,"Office/outpatient visit new","Office Visit","All"
+42,99211,"Office/outpatient visit est","Office Visit","All"
+43,99212,"Office/outpatient visit est","Office Visit","All"
+44,99213,"Office/outpatient visit est","Office Visit","All"
+45,99214,"Office/outpatient visit est","Office Visit","All"
+46,99215,"Office/outpatient visit est","Office Visit","All"
+47,17000,"Destruct premalg lesion","Removal of Skin Lesions","Dermatology"
+48,17003,"Destruct premalg les 2-14","Removal of Skin Lesions","Dermatology"
+49,17004,"Destroy premal lesions 15/>","Removal of Skin Lesions","Dermatology"
+50,17106,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+51,17107,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+52,17110,"Destruct b9 lesion 1-14","Removal of Skin Lesions","Dermatology"
+53,17111,"Destruct lesion 15 or more","Removal of Skin Lesions","Dermatology"
+54,17260,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+55,17261,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+56,17262,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+57,17263,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+58,17264,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+59,17270,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+60,17271,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+61,17272,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+62,17273,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+63,17274,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+64,17280,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+65,17281,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+66,17282,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+67,17283,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+68,17284,"Destruction of skin lesions","Removal of Skin Lesions","Dermatology"
+69,11100,"Biopsy skin lesion","Skin Biopsy","Dermatology"
+70,11101,"Biopsy skin add-on","Skin Biopsy","Dermatology"
+71,93015,"Cardiovascular stress test","Stress Test","Cardiology"
+72,93016,"Cardiovascular stress test","Stress Test","Cardiology"
+73,93017,"Cardiovascular stress test","Stress Test","Cardiology"
+74,93018,"Cardiovascular stress test","Stress Test","Cardiology"
+75,43235,"Uppr gi endoscopy diagnosis","Upper GI Endoscopy","Gastroenterology"
+76,43238,"Uppr gi endoscopy w/us fn bx","Upper GI Endoscopy","Gastroenterology"
+77,43239,"Upper gi endoscopy biopsy","Upper GI Endoscopy","Gastroenterology"
+78,43242,"Uppr gi endoscopy w/us fn bx","Upper GI Endoscopy","Gastroenterology"
+79,43244,"Upper GI endoscopy/ligation","Upper GI Endoscopy","Gastroenterology"
+80,43248,"Uppr gi endoscopy/guide wire","Upper GI Endoscopy","Gastroenterology"
+81,43250,"Upper GI endoscopy/tumor","Upper GI Endoscopy","Gastroenterology"
+82,81000,"Urinalysis nonauto w/scope",Urinalysis,"Primary Care"
+83,81001,"Urinalysis auto w/scope",Urinalysis,"Primary Care"
+84,81002,"Urinalysis nonauto w/o scope",Urinalysis,"Primary Care"
+85,81003,"Urinalysis auto w/o scope",Urinalysis,"Primary Care"
+86,81005,Urinalysis,Urinalysis,"Primary Care"
+87,81050,"Urinalysis volume measure",Urinalysis,"Primary Care"

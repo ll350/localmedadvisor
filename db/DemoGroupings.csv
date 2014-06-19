@@ -1,0 +1,12 @@
+idSpecialtyGroupings,CmsSpecialty,SpecialtyGrouping
+1,Cardiology,"Cardiology"
+2,Dermatology,"Dermatology"
+3,Gastroenterology,"Gastroenterology"
+4,Obstetrics/Gynecology,"Obstetrics/Gynecology"
+5,Ophtalmology,"Ophtalmology/Optometry"
+6,Optometry,"Ophtalmology/Optometry"
+7,"Pediatric Medicine","Pediatric Primary Care"
+8,"Family Medicine","Primary Care"
+9,"General Practice","Primary Care"
+10,"Internal Medicine","Primary Care"
+11,"Geriatric Medicine","Primary Care"

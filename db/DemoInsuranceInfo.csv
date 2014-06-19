@@ -1,0 +1,3 @@
+idUserInsuranceInfo,idUsers,Type,UserDefinedName,StandardName,AnnualDeductible,CoInsuranceMax,PrimaryVisitCoPay,SpecialtyVisitCoPay,InpatientCoPay,OutpatientCoPay,PrimaryVisitDDPercent,SpecialtyVisitDDPercent,InpatientDDPercent,OutpatientDDPercent
+1,1,HMO,"Duke Select","Duke Select (Coventry)",500,2000,20,60,0,0,0,0,0.1,0.1
+2,2,PPO,"Blue Cross","Blue Cross NC PPO",2000,4000,20,60,450,0,0,0,0.1,0.1
