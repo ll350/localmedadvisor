@@ -22,3 +22,9 @@ csv_pros = CSV.parse(csv_pros_text, :headers => true)
 csv_pros.each do |pro|
   Procedure.create(name: pro['CmsSpecialty'], description: pro['SpecialtyGrouping'])
 end
+
+csv_docs_text = File.read('db/DemoDocs.csv')
+csv_docs = CSV.parse(csv_docs_text, :headers => true)
+csv_docs.each do |pro|
+  Provider.create(name: pro['Last Name/Organization Name'], specialty: pro['Provider Type'], city: pro['city'], state: pro['State Code'], zip: pro['Zip Code'])
+end
